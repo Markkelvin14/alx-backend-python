@@ -11,8 +11,8 @@ typ = Union[T, None]
 
 
 def safely_get_value(dct: Mapping, key: Any, default: typ = None) -> mak:
-     '''a function that gets the value'''
-     if key in dct:
-         return dct[key]
-     else:
-         return
+    '''a function that gets the value'''
+    if key in dct:
+        return dct[key]
+    else:
+        return default
